@@ -1,0 +1,27 @@
+body > nav {
+    grid-area: n;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: var(--spacing-4);
+    > ol {
+        position: sticky;
+        top: 20px;
+        a {
+            text-decoration: none;
+            color: var(--dark);
+            &.active {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+.toc {
+    list-style: upper-roman;
+}
+
+.toc__sublist {
+    list-style: lower-alpha;
+}

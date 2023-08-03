@@ -1,0 +1,16 @@
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      toc: true
+
+plugins:
+  - jekyll-toc
+toc:
+  min_level: 2
+  max_level: 4
+  ordered_list: true
+  list_class: toc
+  sublist_class: toc__sublist
