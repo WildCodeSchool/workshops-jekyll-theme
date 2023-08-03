@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{% assign title =  site.title | default: page.title | default: site.github.repository_name %}
+<title>{{ title }} | Wild code school</title>
+<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/syntax_monokai.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% assign style = site.style | default: page.style | default: 'dev' %}
+<link rel="icon" href="{{ '/assets/images/fav-icon-' | append: style | append: '.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/css/theme-' | append: style | append: '.css?v=' | append: site.github.build_revision | relative_url }}">
+
+{% include font-face.html %}
+<script src="{{ '/assets/js/main.js?v=' | append: site.github.build_revision | relative_url }}" type="module"></script>
+
+{% assign show_toc = true %}
+{% if site.show_toc == false or page.show_toc == false %}
+    {% assign show_toc = false %}
+{% endif %}
+
+{% if show_toc %}
+<script type="module" src="{{ '/assets/js/modules/toc.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+{% endif %}

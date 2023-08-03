@@ -1,35 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
-
+<html lang="{{ site.lang | default: "en" }}">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    
+    {% include head.html %}
+    <script src="{{ '/assets/js/modules/wrappDefault.js?v=' | append: site.github.build_revision | relative_url }}" type="module"></script>
 </head>
-<body>
-    <header>
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-        {% assign description = page.description | default: site.description | default: site.github.project_tagline %}
-        {% if description %}
-        <p>{{ description }}</p>
-        {% endif %}
-        <div class="banner">
-            <img src="/assets//images/logo.png" alt="" class="logo">
-            <span>Workshop</span>
-        </div>
-    </header>
-    <nav>
-        {{ content | toc_only }}
-    </nav>
+<body class="{% if show_toc %}has-toc{% endif %}">
+    {% include header.html %}
     <main id="main">
+        {% include main-top-content.html %}
         {{ content }}
     </main>
-    <footer>
-        &copy; 2023 Wild Code School
-    </footer>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    {% include footer.html %}
 </body>
 </html>

@@ -1,0 +1,27 @@
+body>main table {
+    width: 100%;
+    margin-bottom: var(--spacing-2);
+    vertical-align: top;
+    caption-side: bottom;
+    border-collapse: collapse;
+
+    >thead {
+        vertical-align: bottom;
+    }
+
+    >tbody>tr:nth-of-type(odd)>* {
+        background-color: var(--main-color-light);
+    }
+
+
+    td,
+    th {
+        padding: var(--spacing);
+        border-bottom: 1px solid var(--gray-200);
+    }
+}
+
+body>main .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

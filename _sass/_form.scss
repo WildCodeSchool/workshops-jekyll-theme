@@ -1,0 +1,59 @@
+.widget-clone {
+    padding: var(--spacing) var(--spacing-3);
+    margin-bottom: var(--spacing-3);
+    border-radius: var(--border-radius);
+    background-color: var(--white);
+    color: var(--dark);
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: var(--spacing-2);
+    input {
+        flex: 1;
+        padding: var(--spacing) var(--spacing-2);
+        background-color: var(--dark);
+        color: var(--white);
+        border: none;
+        border-radius: var(--border-radius) 0 0 var(--border-radius);
+        font-size: 1rem;
+    }
+    button.copy-button {
+        display: flex;
+        align-items: center;
+        padding: var(--spacing) var(--spacing-2);
+        background-color: var(--main-color);
+        color: var(--main-color-inverse);
+        border: none;
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        cursor: pointer;
+        font-size: 1rem;
+        span {
+            pointer-events: none;
+        }
+        .icon-check {
+            display: none;
+            align-items: center;
+            gap: var(--spacing);
+        }
+        &.copied {
+            .icon-copy {
+                display: none;
+            }
+            .icon-check {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/tic-tac.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/modules/wrappTicTac.js?v=' | append: site.github.build_revision | relative_url }}" type="module"></script>
+</head>
+<body class="{% if show_toc %}has-toc{% endif %}">
+    {% include header.html %}
+    <main id="main">
+        {% include main-top-content.html %}
+        <div class="wrapper-tic-tac">
+            {{ content }}
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,56 @@
+$desktop-breakpoint: 80rem;
+$tablet-breakpoint: 60rem;
+
+:root {
+    --heading-font-family: 'Montserrat', sans-serif;
+
+    --font-size: 1rem;
+    --font-size-small: .875rem;
+
+    --spacing: .5rem;
+    --spacing-2: calc(var(--spacing) * 2);
+    --spacing-3: calc(var(--spacing) * 3);
+    --spacing-4: calc(var(--spacing) * 4);
+    --spacing-8: calc(var(--spacing) * 8);
+    --spacing-10: calc(var(--spacing) * 10);
+    --spacing-12: calc(var(--spacing) * 12);
+
+    --scroll-bar-width: .5rem;
+
+    --main-width: 50rem;
+
+    --border-radius: 8px;
+    --border-radius-sm: 4px;
+
+    --box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow-lg: 0 2px 4px 0px rgba(0, 0, 0, 0.75);
+
+    --transition: .3s ease;
+
+    --gray-100: #dfdfdf;
+    --gray-200: #cacac9;
+    --gray-300: #b4b4b3;
+    --gray-700: #5d5d5c;
+    --gray-800: #484847;
+
+    --dark: #323230;
+    --white: #fff;
+
+    --main-color: #a306b6;
+    --main-color-light: #edddef;//10%
+    --main-color-inverse: #fff;
+
+    --main-color-banner: var(--main-color);
+    --main-color-banner-inverse: var(--main-color-inverse);
+    --main-color-navbar: var(--gray-300);
+    --main-color-navbar-inverse: var(--dark);
+
+    --warning-color: #bb4dc9;//70%
+    --warning-color-inverse: var(--white);
+    --warning-outline-color: var(--dark);
+    
+    --info-color: #d495dc;//40%
+    --info-color-inverse: var(--dark);
+
+    --main-link-color: #a306b6;
+}

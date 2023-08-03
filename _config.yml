@@ -1,16 +1,17 @@
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default"
-      toc: true
+      layout: default
 
 plugins:
-  - jekyll-toc
-toc:
-  min_level: 2
-  max_level: 4
-  ordered_list: true
-  list_class: toc
-  sublist_class: toc__sublist
+  - jekyll-readme-index
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: true

@@ -1,33 +1,39 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    const headings = document.querySelectorAll("h2, h3, h4");
-    const headingsIndexes = [];
+const banner = document.querySelector('.banner');
+const header = document.querySelector('body > header');
 
-    Array.prototype.forEach.call(headings, function(e) {
-        headingsIndexes[e.id] = e.offsetTop;
-    });
+window.onscroll = () => {
+    let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
-    window.onscroll = function() {
-        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-        for (let i in headingsIndexes) {
-            if (headingsIndexes[i] <= scrollPosition) {
-                setActive(document.querySelector('a[href*=' + i + ']'));
-            }
-        }
-    };
-
-    const links = document.querySelectorAll('#toc a');
-    for (let link of links) {
-        link.addEventListener('click', () => {
-            setTimeout(() => setActive(link), 500);
-        });
+    if (scrollPosition > (header.clientHeight - (banner.clientHeight) * 0.3)) {
+        banner.classList.add('fixed');
+    } else {
+        banner.classList.remove('fixed');
     }
-});
 
-function setActive(elem) {
-    const activeLink = document.querySelector('.active');
-    if (activeLink) {
-        activeLink.setAttribute('class', ' ');
-    }
-    elem.setAttribute('class', 'active');
+};
+
+const copyButton = document.getElementById('copy-button');
+if (copyButton) {
+    copyButton.addEventListener('click', (event) => {
+        const inputClone = document.getElementById("input-clone");
+
+        inputClone.select();
+        inputClone.setSelectionRange(0, 99999); // For mobile devices
+    
+        navigator.clipboard.writeText(inputClone.value);
+        inputClone.blur();
+        event.target.classList.add('copied')
+        setTimeout(() => { event.target.classList.remove('copied')}, 2000);
+    })
+}
+
+const wrappTable = (elem) => {
+    const div = document.createElement('div');
+    div.classList.add('table-responsive');
+    elem.before(div);
+    div.append(elem);
+}
+
+for (let table of document.querySelectorAll('table')) {
+    wrappTable(table);
 }

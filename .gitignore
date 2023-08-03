@@ -4,7 +4,6 @@
 .sass-cache
 _site
 Gemfile.lock
-index.md
 
 .idea
 .vscode

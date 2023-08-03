@@ -1,0 +1,28 @@
+{% assign main_image = page.main_image | default: site.main_image %}
+{% if main_image %}
+<img class="main-image" src="{{ main_image }}" alt="">
+{% endif %}
+
+{% assign show_clone = page.show_clone | default: site.show_clone %}
+{% if show_clone %}
+<div class="widget-clone">
+    <label for="input-clone"><i class="bi bi-code-slash"></i> Code</label>
+    <div class="input-group">
+        <input type="text" readonly value="git clone git@github.com:{{ site.github.repository_nwo }}" id="input-clone">
+        <button id="copy-button" class="copy-button" aria-label="Copy to clipboard">
+            <span class="icon-copy">
+                <i class="bi-clipboard"></i>
+            </span>
+            <span class="icon-check">
+                Copied
+                <i class="bi-check-lg"></i>
+            </span>
+        </button>
+    </div>
+    <div class="text-end">
+        <a href="{{ site.github.repository_url }}" target="_blank">
+            <small>{{ site.github.repository_url }} <i class="bi bi-box-arrow-up-right"></i></small>
+        </a>
+    </div>
+</div>    
+{% endif %}  
