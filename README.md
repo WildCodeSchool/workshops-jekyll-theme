@@ -6,7 +6,7 @@ type: Documentation
 
 # Workshops jekyll theme
 
-[⬅  Version FR](/README-FR)
+[⬅  Version FR](./README-FR)
 
 [Jekyll](https://jekyllrb.com/) is a static site engine integrated into [Github pages](https://pages.github.com/). In
 particular, it enables markdown files to be generated and formatted in HTML. This theme, in the Wild colors, is a
@@ -31,7 +31,7 @@ remote_theme: WildCodeSchool/workshops-jekyll-theme
 And that's it! The `workshops-jekyll-theme` is now defined for use when you publish your project via Github pages (see
 the [deploy](#deploy) section).
 
-You can also download this <a href="/config-sample.yml" download="_config.yml">_config.yml</a> file, already set up with
+You can also download this <a href="./config-sample.yml" download="_config.yml">_config.yml</a> file, already set up with
 the configuration variables described below.
 
 ## Configuration
@@ -61,7 +61,7 @@ main_image: https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475661_1280
 show_clone: true
 ```
 
-<a href="/examples/configuration" target="_blank">See the rendering</a> of this configuration.
+<a href="./examples/configuration" target="_blank">See the rendering</a> of this configuration.
 
 ## Templates
 
@@ -181,7 +181,7 @@ More information on [Github pages](https://docs.github.com/fr/pages/getting-star
 
 ## Test localy
 To test locally your contents before deploy, you must [install Jekyll](https://jekyllrb.com/docs/installation/#guides) on your laptop.  
-When it's done, add this <a href="/Gemfile-sample.yml" download="Gemfile">Gemfile</a> file at the root of your foler and run the following command:
+When it's done, add this <a href="./sample-gemfile" download="Gemfile">Gemfile</a> file at the root of your foler and run the following command:
 
 ```bash
 bundle install
@@ -195,11 +195,18 @@ bundle exec jekyll serve --livereload
 
 And browse [http://localhost:4000](http://localhost:4000).
 
+Jekyll generates the files (HTML, CSS, JS, etc.) in the `_site` folder, just as _Github Pages_ will do on deployment.  
+Remember to add this folder to your `.gitignore` file so as not to include them in your version history.  
+```bash
+# .gitignore
+_site
+```
+
 ## Demo
 
-- <a href="/examples/workshop-default" target="_blank">Basic workshop</a>
-- <a href="/examples/configuration" target="_blank">Basic workshop</a> (with cover image)
-- <a href="/examples/tic-tac" target="_blank">Chip and Dale workshop</a> (no table of content)
-- <a href="/examples/tic-tac-design" target="_blank">Chip and Dale workshop</a> (with table of content)
+- <a href="./examples/workshop-default" target="_blank">Basic workshop</a>
+- <a href="./examples/configuration" target="_blank">Basic workshop</a> (with cover image)
+- <a href="./examples/tic-tac" target="_blank">Chip and Dale workshop</a> (no table of content)
+- <a href="./examples/tic-tac-design" target="_blank">Chip and Dale workshop</a> (with table of content)
 
 

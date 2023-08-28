@@ -6,7 +6,7 @@ type: Documentation
 
 # Workshops jekyll theme
 
-[⬅ English version](/)
+[⬅ English version](./)
 
 [Jekyll](https://jekyllrb.com/) est un moteur de site static intégré à [Github pages](https://pages.github.com/).
 Il permet notamment la génération et la mise en forme HTML à partir de fichiers _markdown_. Ce thème, aux couleurs de la Wild, est une proposition de mise en forme des supports pédagogiques au format markdown utilisés pendant les formations.
@@ -31,7 +31,7 @@ remote_theme: WildCodeSchool/workshops-jekyll-theme
 Et voilà ! Le thème `workshops-jekyll-theme` est maintenant défini pour être utilisé lorsque vous publierez votre projet
 via _Github pages_ (voir la section [deploy](#deploy)).
 
-Vous pouvez aussi télécharger ce fichier <a href="/config-sample.yml" download="_config.yml">_config.yml</a> déjà
+Vous pouvez aussi télécharger ce fichier <a href="./config-sample.yml" download="_config.yml">_config.yml</a> déjà
 paramétré avec les variables de configuration décrites ci-après.
 
 ## Configuration
@@ -62,7 +62,7 @@ main_image: https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475661_1280
 show_clone: true
 ```
 
-<a href="/examples/configuration" target="_blank">Voir le rendu</a> de cette configuration.
+<a href="./examples/configuration" target="_blank">Voir le rendu</a> de cette configuration.
 
 ## Modèles
 
@@ -191,7 +191,7 @@ sur [Github pages](https://docs.github.com/fr/pages/getting-started-with-github-
 
 Pour tester localement vos contenus avant déploiement, il est nécessaire
 d'[installer Jekyll](https://jekyllrb.com/docs/installation/#guides) sur votre machine.  
-Une fois cela fait, ajouter ce fichier <a href="/Gemfile-sample.yml" download="Gemfile">Gemfile</a> en racine de votre
+Une fois cela fait, ajouter ce fichier <a href="./sample-gemfile" download="Gemfile">Gemfile</a> en racine de votre
 projet et lancer la commande suivante :
 
 ```bash
@@ -206,10 +206,17 @@ bundle exec jekyll serve --livereload
 
 Et accéder à la page [http://localhost:4000](http://localhost:4000).
 
+Jekyll génère les fichiers (HTML, CSS, JS, etc.) dans le dossier `_site` comme le fera _Github Pages_ lors du déploiement.  
+Pensez à ajouter ce dossier à votre fichier `.gitignore` pour ne pas les inclure dans votre historique de version.
+```bash
+# .gitignore
+_site
+```
+
 ## Démo
 
-- <a href="/examples/workshop-default" target="_blank">Atelier basique</a>
-- <a href="/examples/configuration" target="_blank">Atelier basique</a> (avec image de couverture)
-- <a href="/examples/tic-tac" target="_blank">Atelier Tic et Tac</a> (sans sommaire)
-- <a href="/examples/tic-tac-design" target="_blank">Atelier Tic et Tac</a> (avec sommaire)
+- <a href="./examples/workshop-default" target="_blank">Atelier basique</a>
+- <a href="./examples/configuration" target="_blank">Atelier basique</a> (avec image de couverture)
+- <a href="./examples/tic-tac" target="_blank">Atelier Tic et Tac</a> (sans sommaire)
+- <a href="./examples/tic-tac-design" target="_blank">Atelier Tic et Tac</a> (avec sommaire)
 
