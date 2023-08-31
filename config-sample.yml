@@ -13,3 +13,6 @@ description: ''
 # main_image: '' # http or relative path to image
 show_clone: false
 show_toc: true
+
+github:
+  repository_url: https://github.com/wildcodeschool/workshops-jekyll-theme
