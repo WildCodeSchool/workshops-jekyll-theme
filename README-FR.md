@@ -62,16 +62,15 @@ main_image: https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475661_1280
 show_clone: true
 ```
 
-<a href="./examples/configuration" target="_blank">Voir le rendu</a> de cette configuration.
+<a href="./examples/configuration-data" target="_blank">Voir le rendu</a> de cette configuration.
 
-## Modèles
+## Templates
 
-Deux modèles sont disponibles.
+Deux templates sont disponibles.
 
-- **default** (modèle par défaut) : Les sections y sont automatiquement générées à partir des intertitres `<h1>`
+- **default** (sélectionné par défaut) : Les sections y sont automatiquement générées à partir des intertitres `<h1>`
   et `<h2>`.
-- **tic-tac** : Les sections générées à partir des intertitres `<h1>` occupent une pleine largeur. Les sections générées
-  à partir des intertitres `<h2>` se positionnent sur une grille à deux colonnes par alternance gauche/droite.
+- **tic-tac** : Pour ateliers en binôme. Les sections générées à partir des intertitres `<h1>` occupent une pleine largeur. Les sections générées à partir des intertitres `<h2>` se positionnent sur une grille à deux colonnes par alternance gauche/droite.
 
 ### Sélectionner
 
@@ -214,9 +213,10 @@ _site
 ```
 
 ## Démo
+Différents exemples de configuration et styles avec de faux contenus.
 
-- <a href="./examples/workshop-default" target="_blank">Atelier basique</a>
-- <a href="./examples/configuration" target="_blank">Atelier basique</a> (avec image de couverture)
-- <a href="./examples/tic-tac" target="_blank">Atelier Tic et Tac</a> (sans sommaire)
-- <a href="./examples/tic-tac-design" target="_blank">Atelier Tic et Tac</a> (avec sommaire)
+- <a href="./examples/workshop-default-dev" target="_blank">Atelier basique</a> (avec bouton clone / Dev)
+- <a href="./examples/configuration-data" target="_blank">Atelier basique</a> (avec image de couverture / Data)
+- <a href="./examples/tic-tac-ciber" target="_blank">Atelier Tic et Tac</a> (sans sommaire / Ciber)
+- <a href="./examples/tic-tac-design" target="_blank">Atelier Tic et Tac</a> (avec sommaire / Design)
 

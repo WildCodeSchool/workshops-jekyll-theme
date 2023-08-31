@@ -17,14 +17,16 @@ Elit anim reprehenderit sint amet velit excepteur do cillum consequat. Labore co
 
 ## Tac side `<H2>`
 Duis laboris reprehenderit mollit sit est velit ex ipsum culpa irure magna.
-```js
-const foo = 'bar'
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install docker.io
 ```
 
 ## Next for Tic `<H2>`
 Qui minim id elit mollit commodo in nisi nisi ullamco.
 ```bash
-$ npm i ...
+docker exec -it container sh
 ```
 
 ## Next Tac `<H2>`

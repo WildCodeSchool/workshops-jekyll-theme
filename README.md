@@ -61,17 +61,17 @@ main_image: https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475661_1280
 show_clone: true
 ```
 
-<a href="./examples/configuration" target="_blank">See the rendering</a> of this configuration.
+<a href="./examples/configuration-data" target="_blank">See the rendering</a> of this configuration.
 
 ## Templates
 
 Two templates are available.
 
-- **default** (default template):  Sections are automatically generated from `<h1>` and `<h2>` headers.
-- **tic-tac**: Sections generated from `<h1>` headers occupy a full width. Sections generated from `<h2>` headers are positioned on a two-column grid, alternating right/left.
+- **default** (selected by default):  Sections are automatically generated from `<h1>` and `<h2>` headers.
+- **tic-tac**: For paired workshops. Sections generated from `<h1>` headers occupy a full width. Sections generated from `<h2>` headers are positioned on a two-column grid, alternating right/left.
 
 ### Select
-Template selection is also made via the `_config.yml` file using the `layout` key in the `default` table, indicating the template name as follows:
+Template selection is also made via the `_config.yml` file using the `layout` key in the `defaults` table, indicating the template name as follows:
 
 ```yaml
 defaults:
@@ -204,9 +204,11 @@ _site
 
 ## Demo
 
-- <a href="./examples/workshop-default" target="_blank">Basic workshop</a>
-- <a href="./examples/configuration" target="_blank">Basic workshop</a> (with cover image)
-- <a href="./examples/tic-tac" target="_blank">Chip and Dale workshop</a> (no table of content)
-- <a href="./examples/tic-tac-design" target="_blank">Chip and Dale workshop</a> (with table of content)
+Various configuration examples and styles with fake content.
+
+- <a href="./examples/workshop-default-dev" target="_blank">Basic workshop</a> (with clone button / Dev)
+- <a href="./examples/configuration-data" target="_blank">Basic workshop</a> (with cover image / Data)
+- <a href="./examples/tic-tac-ciber" target="_blank">Chip and Dale workshop</a> (no table of content / Ciber)
+- <a href="./examples/tic-tac-design" target="_blank">Chip and Dale workshop</a> (with table of content / Design)
 
 
