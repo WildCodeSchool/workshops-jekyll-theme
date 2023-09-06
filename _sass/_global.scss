@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: var(--scroll-bar-width);
+    padding-left: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background: var(--gray-300);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: var(--gray-700);
+}
+
+*:focus-visible {
+    outline: dashed var(--dark);
+    outline-offset: 4px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    @media screen and (width > $desktop-breakpoint) {
+        font-size: 118.75%;
+    }
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'h h h'
+        '. m .'
+        '. f .'
+    ;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 70rem) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--main-color-light);
+    color: var(--dark);
+    font-family: 'proxima', sans-serif;
+    line-height: 1.5;
+    padding: 0 var(--spacing);
+    &.has-toc {
+        @media screen and (width > $tablet-breakpoint) {
+            grid-template-columns: minmax(0, 25%) min(100%, 50rem) minmax(0, 1fr);
+            grid-template-areas:
+                'h h h'
+                'n m .'
+                'n f .'
+            ;
+        }
+    
+        @media screen and (width > $desktop-breakpoint) {
+            grid-template-columns: minmax(0, calc((100vw - 50rem) / 2)) 50rem minmax(0, 1fr);
+            grid-template-areas:
+                'h h h'
+                'n m .'
+                'n f .'
+            ;
+        }
+    }
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--heading-font-family);
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing);
+}

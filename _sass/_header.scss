@@ -39,6 +39,9 @@ body > header {
         margin-bottom: 0;
         font-weight: 700;
     }
+    a {
+        color: var(--main-link-color);
+    }
 
     > .banner {
         --banner-main-color: var(--main-color-banner);
@@ -49,7 +52,6 @@ body > header {
         bottom: 0;
         left: 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 100%;
         height: 3rem;
@@ -66,6 +68,10 @@ body > header {
         .title {
             display: none;
             font-family: var(--heading-font-family);
+            margin-left: var(--spacing-2);
+        }
+        .type {
+            margin-left: auto;
         }
         &.fixed {
             --banner-main-color: var(--main-color-banner-inverse);
@@ -77,6 +83,9 @@ body > header {
             z-index: 10;
             .title {
                 display: block;
+            }
+            a {
+                color: var(--banner-main-color-inverse);
             }
         }
         > svg.logo {

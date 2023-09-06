@@ -1,6 +1,6 @@
 {% assign main_image = page.main_image | default: site.main_image %}
 {% if main_image %}
-<img class="main-image" src="{{ main_image }}" alt="">
+<img class="main-image" src="{{ main_image }}" alt="{{ title }}">
 {% endif %}
 
 {% assign show_clone = page.show_clone | default: site.show_clone %}

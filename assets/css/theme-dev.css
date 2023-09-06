@@ -1,14 +1,15 @@
 :root {
     --main-color: #a306b6;
     --main-color-light: #edddef;
+    --main-color-200: #e5c5e8;
     --main-color-inverse: #faf45e;
 
     --main-color-banner: var(--white);
     --main-color-banner-inverse: var(--main-color);
-    --main-color-navbar: var(--gray-300);
+    --main-color-navbar: transparent;
     --main-color-navbar-inverse: var(--dark);
 
-    --warning-color: #bb4dc9;
+    --warning-color: #a306b6;
     --warning-color-inverse: #faf45e;
     --warning-outline-color: var(--dark);
 

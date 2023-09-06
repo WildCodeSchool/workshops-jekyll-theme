@@ -1,0 +1,22 @@
+body>footer {
+    grid-area: f;
+    padding: var(--spacing);
+    margin-top: var(--spacing-4);
+    background-color: var(--gray-800);
+    color: var(--white);
+    text-align: center;
+    font-size: var(--font-size-small);
+    margin-left: calc(var(--spacing) * -1);
+    margin-right: calc(var(--spacing) * -1);
+    a {
+        color: var(--white);
+        &:focus-visible {
+            outline-color: var(--white);
+        }
+    }
+    @media screen and (width > $tablet-breakpoint) {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

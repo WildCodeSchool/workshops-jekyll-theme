@@ -2,7 +2,7 @@ $desktop-breakpoint: 80rem;
 $tablet-breakpoint: 60rem;
 
 :root {
-    --heading-font-family: 'Montserrat', sans-serif;
+    --heading-font-family: 'filsonpro', sans-serif;
 
     --font-size: 1rem;
     --font-size-small: .875rem;
@@ -38,6 +38,7 @@ $tablet-breakpoint: 60rem;
 
     --main-color: #a306b6;
     --main-color-light: #edddef;//10%
+    --main-color-200: #e5c5e8;//20%
     --main-color-inverse: #fff;
 
     --main-color-banner: var(--main-color);

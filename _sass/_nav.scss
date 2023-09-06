@@ -4,31 +4,31 @@ body > nav {
     justify-content: flex-end;
     align-items: flex-start;
     padding-right: var(--spacing);
+    
     > ol {
         --scroll-bar-width: .25rem;
         margin: 0;
         position: sticky;
         top: 5rem;
         padding: var(--spacing);
-        margin-top: calc(var(--spacing) * -1);
-        margin-left: calc(var(--spacing) * -1);
         max-height: calc(100vh - 5rem - var(--spacing));
         overflow: auto;
         list-style: none;
+        background-color: var(--main-color-navbar);
+        border-radius: var(--border-radius);
         li {
             line-height: 1.2;
         }
         a {
-            --nav-bg-color: var(--main-color-navbar);
+            --nav-bg-color: transparent;
             --nav-color: var(--main-color-navbar-inverse);
             display: block;
-            padding: var(--spacing) var(--spacing-2);
+            padding: calc(var(--spacing) / 2) var(--spacing-2);
             margin-bottom: var(--spacing);
             border-radius: var(--border-radius-sm);
             text-decoration: none;
             background-color: var(--nav-bg-color);
             color: var(--nav-color);
-            font-weight: 600;
             transition: background-color var(--transition), color var(--transition);
             overflow: hidden;
             text-overflow: ellipsis;
@@ -39,7 +39,7 @@ body > nav {
         }
         ol {
             list-style: none;
-            padding-left: var(--spacing-4);
+            padding-left: var(--spacing-3);
             > li {
                 > a {
                     font-size: .875em;
