@@ -15,6 +15,10 @@
         <span>
             {% assign type = page.type | default: site.type | default: 'Workshop' %}
             {{ type | capitalize }}
+            &nbsp;|&nbsp;
+            <a href="{{ site.github.repository_url }}/issues/new" target="_blank">
+                Feedback <i class="bi bi-box-arrow-up-right"></i>
+            </a>
         </span>
     </div>
 </header>
