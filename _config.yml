@@ -6,6 +6,7 @@ defaults:
 
 plugins:
   - jekyll-readme-index
+  - jekyll-titles-from-headings
 
 kramdown:
   input: GFM
@@ -15,3 +16,8 @@ readme_index:
   enabled: true
   remove_originals: false
   with_frontmatter: true
+
+titles_from_headings:
+  enabled: false
+  strip_title: false
+  collections: false
