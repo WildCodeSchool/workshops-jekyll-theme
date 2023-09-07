@@ -9,8 +9,13 @@ const wrappSection = (elem) => {
         section.classList.add('no-background')
     }
     if (elem.tagName === 'H2') {
-        section.classList.add(sectionClasses[sectionIndex % 2]);
-        sectionIndex++;
+        if (elem.classList.contains('both')) {
+            elem.classList.remove('both');
+            section.classList.add('both');
+        } else {
+            section.classList.add(sectionClasses[sectionIndex % 2]);
+            sectionIndex++;
+        }
     }
     elem.before(section);
     const nextUntilHeadings = nextUntil(elem, ['h1', 'h2']);
