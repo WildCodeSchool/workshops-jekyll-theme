@@ -2,6 +2,7 @@
 style: wild
 title: Workshops jekyll theme
 type: Documentation
+lang: fr
 ---
 
 # Workshops jekyll theme
@@ -48,6 +49,7 @@ l'affichage.
 | **main_image**  | string |    none    | Image de couverture affichée avant le contenu principal (indiquer une adresse **http** ou **le chemin relatif** d'un fichier à partir de la racine de votre dossier).        |
 | **show_clone**  |  bool  |   false    | Afficher/masquer la commande `git clone <adresse-de-votre-dépôt>` pré-remplie.                                                                                               |
 | **show_toc**    |  bool  |    true    | Afficher/masquer la table des matières.                                                                                                                                      |
+| **lang**        | string |     en     | Définir la langue de la page HTML  (attribut `<html lang='en'>`)                                                                                                             |
 
 ### Exemple
 

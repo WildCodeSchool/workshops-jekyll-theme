@@ -47,6 +47,7 @@ Below is a list of variables that can be added to the `_config.yml` file if you 
 | **main_image**  | string |    none    | Cover image displayed before the main content (indicate an **http** address or the **relative path** of a file from the root of your folder).                          |
 | **show_clone**  |  bool  |   false    | Show/hide pre-populated `git clone <address-of-your-repository>` command.                                                                                              |
 | **show_toc**    |  bool  |    true    | Show/hide table of contents.                                                                                                                                           |
+| **lang**        | string |     en     | Set HTML lang attribute                                                                                                                                                |
 
 ### Example
 
