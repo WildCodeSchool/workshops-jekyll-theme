@@ -11,6 +11,7 @@ body > nav {
         position: sticky;
         top: 5rem;
         padding: var(--spacing);
+        max-width: 17rem;
         max-height: calc(100vh - 5rem - var(--spacing));
         overflow: auto;
         list-style: none;
