@@ -12,6 +12,11 @@ type: Documentation
 particular, it enables markdown files to be generated and formatted in HTML. This theme, in the Wild colors, is a
 suggested layout for the markdown format teaching aids used during training sessions.
 
+<div class="alert-info">
+  <a href="https://drive.google.com/file/d/1wTnb3jhB-_6bm47ShN8S-l2Pih0OmYC7/view?usp=drive_link" target="_blank"><i class="bi bi-play-circle-fill"></i> Watch the video demo</a>.
+</div>
+
+
 ## How it works
 
 Create your content (workshop, support, dojo, etc.) on a Git repository as you probably already do.

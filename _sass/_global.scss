@@ -72,3 +72,8 @@ body {
     margin-top: var(--spacing-8);
     margin-bottom: var(--spacing);
 }
+
+video {
+    max-width: 100%;
+    height: auto;
+}
