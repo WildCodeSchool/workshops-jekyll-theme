@@ -106,7 +106,9 @@ Some text
 {: .alert-info }
 ```
 
-Will create a paragraphe with CSS class `alert-info` ⬇
+Will create a paragraphe with CSS class `alert-info`  
+⬇
+{: .text-center }
 
 Some text
 {: .alert-info }
@@ -119,7 +121,9 @@ Some text…
 {: .alert-warning }
 ```
 
-Will create a paragraphe with CSS class `alert-warning` ⬇
+Will create a paragraphe with CSS class `alert-warning`  
+⬇
+{: .text-center }
 
 Some text…  
 Some text…  
@@ -136,7 +140,9 @@ Some text…
 {% endraw %}
 ```
 
-Creates a multi-line `<blockquote>` ⬇
+Creates a multi-line `<blockquote>`  
+⬇
+{: .text-center }
 > Further details [with links](#), `inline code` or block of code
 > ```php
 > $content = 'block of code'
@@ -154,6 +160,7 @@ Images retain an _inline_ display type.
 ```
 
 ⬇  
+{: .text-center }
 ![](https://fakeimg.pl/250x100/)
 ![](https://fakeimg.pl/350x200/)
 ![](https://fakeimg.pl/283x100/)
@@ -165,8 +172,25 @@ The CSS properties `max-width: 100%` and `height: auto;` are applied to them to 
 ![](https://fakeimg.pl/2500x400/)
 ```
 
-⬇  
+⬇
+{: .text-center }  
 ![](https://fakeimg.pl/2500x400/)
+
+### Text align
+Two css classes are available to modify text alignment. 
+- `{: .text-center }` : center alignment
+- `{: .text-end }` : right alignment  
+  
+Useful for modifying image alignment, for example.
+
+```markdown
+![](https://fakeimg.pl/400x100/)
+{: .text-center }
+```
+⬇ 
+{: .text-center }
+![](https://fakeimg.pl/400x100/)
+{: .text-center }
 
 ### Table of content
 
