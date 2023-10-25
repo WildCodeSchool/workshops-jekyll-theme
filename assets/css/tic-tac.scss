@@ -30,5 +30,8 @@ body>main>.wrapper-tic-tac section {
         &:last-of-type {
             margin-bottom: var(--spacing-8);
         }
+        h2 + h3 {
+            margin-top: 0;
+        }
     }
 }
