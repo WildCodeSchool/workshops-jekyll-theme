@@ -9,6 +9,11 @@
 body>main>.wrapper-tic-tac section {
     &.no-background {
         grid-column: 1 / -1;
+        > * {
+            max-width: var(--main-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &:not(.no-background) {
         border: .1875rem solid;

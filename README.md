@@ -16,6 +16,7 @@ suggested layout for the markdown format teaching aids used during training sess
   <a href="https://drive.google.com/file/d/1wTnb3jhB-_6bm47ShN8S-l2Pih0OmYC7/view?usp=drive_link" target="_blank"><i class="bi bi-play-circle-fill"></i> Watch the video demo</a>.
 </div>
 
+[Read CHANGELOG](./CHANGELOG)
 
 ## How it works
 
@@ -209,7 +210,7 @@ Each update to the _main_ branch will automatically trigger a new deployment to 
 ![](images/github-action.png)
 More information on [Github pages](https://docs.github.com/fr/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
 
-## Test localy
+## Test locally
 To test locally your contents before deploy, you must [install Jekyll](https://jekyllrb.com/docs/installation/#guides) on your laptop.  
 When it's done, add this <a href="./sample-gemfile" download="Gemfile">Gemfile</a> file at the root of your foler and run the following command:
 

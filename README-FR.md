@@ -16,6 +16,8 @@ Il permet notamment la génération et la mise en forme HTML à partir de fichie
   <a href="https://drive.google.com/file/d/1wTnb3jhB-_6bm47ShN8S-l2Pih0OmYC7/view?usp=drive_link" target="_blank"><i class="bi bi-play-circle-fill"></i> Regarder la démo</a>.
 </div>
 
+[Lire le CHANGELOG](./CHANGELOG)
+
 ## Principe
 
 - Créez votre contenu (atelier, support, dojo, etc.) sur un dépôt Git comme vous le faites probablement déjà.
