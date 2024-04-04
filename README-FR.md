@@ -201,6 +201,37 @@ Utile pour modifier l'alignement des images par exemple.
 ![](https://fakeimg.pl/400x100/)
 {: .text-center }
 
+### Markdown dans des balises HTML
+
+Par défaut, si vous utilisez des balises HTML comme ceci :
+
+```markdown
+<div>
+
+Hello World !!!
+
+</div>
+```
+
+Le contenu `Hello World !!!` est interprété comme du code HTML pour beaucoup de balises. Cela signifie que vous ne pourrez pas utiliser du markdown dans ces balises HTML.
+
+Vous pouvez explicitement activer l'interprétation du markdown avec `markdown="1"` :
+
+````markdown
+<details markdown="1">
+<summary>
+Une solution ?
+</summary>
+
+```js
+// sans markdown="1", cette partie serait interprétée comme du texte brut
+
+console.log("Hello World !!!");
+```
+
+</details>
+````
+
 ### Table des matières
 
 Pour les deux templates actuellement disponibles (**default** et **tic-tac**), la table de contenu est générée à partir
