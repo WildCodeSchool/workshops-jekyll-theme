@@ -193,6 +193,37 @@ Useful for modifying image alignment, for example.
 ![](https://fakeimg.pl/400x100/)
 {: .text-center }
 
+### Markdown in HTML tags
+
+By default, when using HTML tags in a page like this:
+
+```markdown
+<div>
+
+Hello World !!!
+
+</div>
+```
+
+The content `Hello World !!!` is parsed as HTML code for many HTML tags. This means you won't be able to use markdown inside these HTML tags.
+
+You can explicitly activate markdown parsing with `markdown="1"`:
+
+````markdown
+<details markdown="1">
+<summary>
+A solution ?
+</summary>
+
+```js
+// without markdown="1", this will be parsed as regular HTML text
+
+console.log("Hello World !!!");
+```
+
+</details>
+````
+
 ### Table of content
 
 For the two templates currently available (**default** and **tic-tac**), the table of content is generated from
