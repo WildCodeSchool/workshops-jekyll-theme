@@ -55,6 +55,18 @@ Below is a list of variables that can be added to the `_config.yml` file if you 
 | **show_toc**    |  bool  |    true    | Show/hide table of contents.                                                                                                                                           |
 | **lang**        | string |     en     | Set HTML lang attribute                                                                                                                                                |
 
+<div class="alert-info" markdown="block">
+Note that each variable may be rewritten in the yaml front matter of a page.
+
+```yaml
+---
+title: A special title
+description: A special description
+---
+```
+
+</div>
+
 ### Example
 
 ```yaml
