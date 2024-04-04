@@ -56,6 +56,17 @@ l'affichage.
 | **show_clone**  |  bool  |   false    | Afficher/masquer la commande `git clone <adresse-de-votre-dépôt>` pré-remplie.                                                                                               |
 | **show_toc**    |  bool  |    true    | Afficher/masquer la table des matières.                                                                                                                                      |
 | **lang**        | string |     en     | Définir la langue de la page HTML  (attribut `<html lang='en'>`)                                                                                                             |
+<div class="alert-info" markdown="block">
+Notez que chaque variable peut être réécrite dans le "front matter yaml" d'une page.
+
+```yaml
+---
+title: A special title
+description: A special description
+---
+```
+
+</div>
 
 ### Exemple
 
